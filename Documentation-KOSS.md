@@ -37,10 +37,20 @@
 
 ## `git reflog`
 
+- Used to access a list of checkpoints that is maintained by Git. 
+- it can be used to undo merges, recover lost commits/branches, etc. 
+
 ## `git diff`
 
 ## `git switch`
 
 ## `git rebase`
 
+- To reapply commits on top of another base tip 
+- Usually used instead of `git merge` to get a linear history. 
+
 ## `git cherry-pick`
+
+- Used to pick changes from one branch and apply it to current branch 
+- This is usually done before merging branches. 
+- 
