@@ -2,7 +2,6 @@
 
 <h1>Instructions</h1>
 
-## Story
 
 Git is a very powerful source control software and it is used in most open source projects. It is also an integral part of our projects here at KOSS and is used to manage all our projects.
 
