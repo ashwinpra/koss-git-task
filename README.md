@@ -1,6 +1,9 @@
-# koss-git-task
+<h1> Instructions to view the presentation </h1>
+---
+Simply clone the repository and open the file `index.html` on your web browser.
+---
 
-<h1>Instructions</h1>
+<h1>Instructions for the Task</h1>
 
 
 Git is a very powerful source control software and it is used in most open source projects. It is also an integral part of our projects here at KOSS and is used to manage all our projects.
