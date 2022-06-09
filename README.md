@@ -1,7 +1,7 @@
 <h1> Instructions to view the presentation </h1>
----
+
 Simply clone the repository and open the file `index.html` on your web browser.
----
+
 
 <h1>Instructions for the Task</h1>
 
