@@ -1,6 +1,4 @@
-# Documentation
-
-## Some new git commands
+# Some new git commands
 
 ---
 
