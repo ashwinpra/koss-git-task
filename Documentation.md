@@ -13,7 +13,6 @@
 - You can manually push changes to stash using `git stash push -m "<message>"`
 - Then you can run `git stash apply` or `git stash apply x` according to your need. (x is corresponding index)
 - Lower the index, more recent the change 
-- If you don't need to apply those changes, then just use `git checkout . ` which resets all the uncommited code. 
 - This can be used for debugging of potentially bugged file by stashing it and seeing if there is a bug, if not then checking out. 
 - `git stash pop` used to implement that stash on your main code and then remove it from the stash list. 
 - You can even carry forward the stashed commits to a different branch using `git stash branch`
@@ -35,8 +34,8 @@
 
   ```bash
   git bisect start 
-  git bisect bad <commit-id>
-  git bised good <commit-id>
+  git bisect bad <bad-commit-id>
+  git bisect good <good-commit-id>
   ```
 
 - If after running, the issue still persists, we use `git bisect bad` (only that much)
@@ -49,7 +48,7 @@
 
 - Once finished, you can run `git bisect reset` to reset the branch back to last good commit.
 
-- You can reset to the last good commit by `git revert <commit-id>`, then type `wq` -> check this
+- You can reset to the last good commit by `git revert <commit-id>`, then type `wq` -> **check this**
 
 ---
 
@@ -61,7 +60,7 @@
 
 - The main difference between `reflog` and `log` is that `log` gives accounts of the public repository's details whereas `reflog` gives all accounts of the repository's changes and commits on the user's local system. 
 
-  
+  ​	
 
 ---
 
@@ -69,7 +68,7 @@
 
 - To see the difference between commits - current commit and staged/unstaged commit. 
 - Can also be used to see differences between two branches
-- `git diff` for unstaged changes, `git diff --staged` for staged changes, `git diff branch1.branch2`for difference between two branches.
+- `git diff` for unstaged changes, `git diff --staged` for staged changes, `git diff branch1 branch2`for difference between two branches.
 
 ---
 
@@ -78,7 +77,6 @@
 - To switch to another branch.
 - `git switch branch-name` used to switch to a certain branch. 
 - `git switch -` used to switch back to original branch.
-- **Mention difference between switch and checkout**
 
 ---
 
@@ -86,7 +84,8 @@
 
 - To reapply commits on top of another base tip 
 - Usually used instead of `git merge` to get a linear history. 
-- **Mention difference between rebase and merge**
+- In the case of `merge` it creates a branched structure that ties together both branches, whereas here in `rebase` it creates a linear branch by moving the entire branch being rebased to begin on the tip of the `main` branch by rewriting all the commits in the original branch
+- This is usually just used in private projects as the commits in `main` branch is moved to the original branch, so the `main` branch still remains intact for all the developers working on the branch.
 
 ---
 
@@ -95,3 +94,4 @@
 - Used to pick changes from one branch and apply it to current branch 
 - This is usually done before merging branches. 
 - `git cherry-pick <commit>`
+- add `-n` prefix at the end to stage the changes, but not commit
