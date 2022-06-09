@@ -1,6 +1,6 @@
 <h1> Instructions to view the Presentation </h1>
 
-* Simply clone the repository and open the file `index.html` on your web browser.
+* Simply visit <a href=https://ashwinpra.github.io/koss-git-task target="_blank">this</a> website.
 * A documentation file called `Documentation.MD` has also been added which essentially contains all the contents of the presentation in a more detailed form.
 
 
